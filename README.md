@@ -1,12 +1,10 @@
-# Stryda Infrastructure
+# Infrastructure
 
 ![Tech](https://github.com/g-loot/infra-terragrunt/workflows/Tech/badge.svg)
 
 This repository creates and updates infrastructure (such as folders, projects, DBs, kubernetes, etc) in GCP.
 
 **Need a new service?** Make a pull request!
-
-**Need help?** Reach out in Slack: [#infra-and-ops](https://gloot.slack.com/archives/CQPKF00CR).
 
 ## Dev notes
 
@@ -17,10 +15,6 @@ docker run --rm -v `pwd`/terragrunt:/apps \
 alpine/terragrunt:1.0.0 \
 bash -c "terraform fmt -recursive && terragrunt hclfmt"
 ```
-
-## Local debugging
-
-Running Terragrunt locally is possible, but not recommended since it will compete with the pipeline. Read more in the [infra-terragrunt-docker](https://github.com/g-loot/infra-terragrunt-docker) repository on how to run terragrunt locally.
 
 ## Folder structure
 
