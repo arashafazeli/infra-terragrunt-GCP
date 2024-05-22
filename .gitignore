@@ -1,0 +1,22 @@
+#  Local .terraform directories
+**/.terraform/*
+**/.terragrunt-cache/*
+**.terraform.lock.hcl
+
+# .tfstate files
+*.tfstate
+*.tfstate.*
+
+# .tfvars files
+*.tfvars
+
+.idea
+
+# macOS files
+*.DS_Store
+
+# Terragrunt plan files
+*.plan
+
+# Stupid generated main.tf
+terragrunt/live/main.tf
